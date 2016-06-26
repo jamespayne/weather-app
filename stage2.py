@@ -1,10 +1,18 @@
 #!/usr/bin/env python
 
+# Weather Forecast application
+# Author: James Payne
+
+# Main back end script to generate the forecast based on the input from the
+# web form.
+
 import sys, re, json, urllib2, time, csv
 import datetime as dt
 from dateutil.relativedelta import relativedelta
 
 class Station:
+
+	'''Main Class to create a station object and process the input'''
 
 	def __init__(self, station, hour, minute, meridian, dayofweek=0,
 				n=0, from_specifier='', day='', time_period = ''):
@@ -51,6 +59,9 @@ class Station:
 		return self.station
 
 	def getWeather(self):
+
+		'''Main function to process the input and get a forecast from the API'''
+
 		url = 'https://api.forecast.io/forecast/'
 		url += self.key+'/'+self.lat+','+self.lon+','+self.api_datetime
 		url += '?units=auto'
@@ -109,6 +120,8 @@ class Station:
 				self.key = str(line)
 		key.close()
 
+# This is the wrong way to use main and needs to be fixed!
+
 def main():
 	pass
 
@@ -136,6 +149,7 @@ def getStations():
 	        stations.sort()
 	return stations
 
+# All the web form related functions
 
 def getFromSpecifiers():
 	days = ['Tomorrow','Now','Today', 'Next Week']
