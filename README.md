@@ -3,9 +3,9 @@ Simple python based web server and client which calls the DarkSky Weather API. T
 
 ## Aim
 
-*Further improve my python programming skills.
-*Introduction to using web APIs
-*Ensure proper exception handling is used
+* Further improve my python programming skills.
+* Introduction to using web APIs
+* Ensure proper exception handling is used
 
 ## Language/Technology used
 
