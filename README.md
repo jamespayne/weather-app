@@ -22,4 +22,4 @@ The data source for station locations is from Public Transport Victoria and only
 
 ## Notes
 
-You will need an api key from Darksky to run this application. The key should be stored in a file called forecastKey (no extension) in the root directory. This file has not been included for security purposes.
+You will need an api key from Darksky to run this application. The key should be stored in a file called forecastKey (no extension) in the root directory. This file has not been included for security reasons.
