@@ -5,6 +5,10 @@ html, body {
 	height: 100% !important;
 }
 
+.container{
+	padding-top: 15px;
+}
+
 #lat, #lon{
 	display: none;
 }
