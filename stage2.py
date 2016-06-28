@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # Weather Forecast application
-# Author: James Payne
+# Author: James Payne 2016
 
 # Main back end script to generate the forecast based on the input from the
 # web form.
@@ -65,7 +65,6 @@ class Station:
 		url = 'https://api.forecast.io/forecast/'
 		url += self.key+'/'+self.lat+','+self.lon+','+self.api_datetime
 		url += '?units=auto'
-		print url
 		forecast = json.load(urllib2.urlopen(url))
 		try:
 			self.summary = forecast['currently']['icon']
@@ -97,7 +96,6 @@ class Station:
 
 		if self.time_period == 'days':
 			self.timetoadd = self.n
-			print self.timetoadd
 			self.out_dt += relativedelta(days=self.n)
 		if self.time_period == 'weeks':
 			self.timetoadd = self.n
@@ -119,14 +117,6 @@ class Station:
 				line = line.replace('\n','')
 				self.key = str(line)
 		key.close()
-
-# This is the wrong way to use main and needs to be fixed!
-
-def main():
-	pass
-
-if __name__ == '__main__':
-	main()
 
 # Form Helper Functions. Keep back-end seperated from front-end.
 
