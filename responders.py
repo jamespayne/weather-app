@@ -1,17 +1,18 @@
 #!/usr/bin/python
-from stage2 import *
+import stage2 as s
+from stage2 import Station
 
 # this is suitable for a GET - it has no parameters
 def initialPage():
 
 	# Set up the arrays/dictionaries to be output into the form dropdowns
 
-	stations = getStations()
-	timeperiods = getTimePeriods()
-	from_specifiers = getFromSpecifiers()
-	days = getDays()
-	hours = getHours()
-	minutes = getMinutes()
+	stations = s.getStations()
+	timeperiods = s.getTimePeriods()
+	from_specifiers = s.getFromSpecifiers()
+	days = s.getDays()
+	hours = s.getHours()
+	minutes = s.getMinutes()
 
 	data = "<!DOCTYPE html>"
 	data += '<html>\n<head>\n'
@@ -19,7 +20,6 @@ def initialPage():
 	data += '<link rel="stylesheet" type="text/css" href="bootstrap.min.css">\n'
 	data += '<link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css">\n'
 	data += '<link rel="stylesheet" type="text/css" href="main.css">\n'
-	data += '<script src="main.js"></script>'
 	data += '</head>\n<body>\n'
 
 	data += '<div class="container">\n' #Start Container
