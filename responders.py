@@ -21,9 +21,7 @@ def initialPage():
 	data += '<link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css">\n'
 	data += '<link rel="stylesheet" type="text/css" href="main.css">\n'
 	data += '</head>\n<body>\n'
-
 	data += '<div class="container">\n' #Start Container
-	data += '<nav class="navbar navbar-full navbar-dark bg-primary"></nav>'
 	data += '<form action="http://127.0.0.1:34567/" method="POST">\n'
 	data += '<div class="form-group">\n'
 	data += '<label for="station">Station</label>\n'
@@ -103,6 +101,7 @@ def initialPage():
 	data += '<button class="btn btn-primary pull-right" type="submit">Get Forecast</button>\n'
 	data += '</form>\n'
 	data += '</div>\n' # End Container
+	data += '<script src="main.js"></script>'
 	data += '</body>\n</html>'
 	return data
 
