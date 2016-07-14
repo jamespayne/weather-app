@@ -11,6 +11,15 @@ Simple python based web server and client which calls the DarkSky Weather API. T
 
 * Python
 * Darksky Weather Forecasting API
+* 
+
+## Dependencies
+
+The only non core module used in this app is dateutil which can be installed using pip:
+  
+  pip install python-dateutil
+
+I may remove this dependency and update the code to achive the same functionality with a core module in the future.
 
 ## Data Sources
 
