@@ -1,8 +1,6 @@
 # weatherapp
 Simple python based web server and client which calls the DarkSky Weather API. This was a university project.
 
-[Working Example/Demo](http://weather.jamespayne.net.au)
-
 ## Aim
 
 * Further improve my python programming skills.
