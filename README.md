@@ -36,4 +36,4 @@ The data source for station locations is from Public Transport Victoria and only
 
 ~~You will need an api key from Darksky to run this application. The key should be stored in a file called forecastKey (no extension) in the root directory. This file has not been included for security reasons.~~
 
-This old, outdated and a possible security risk. The main script stage2.py references a file called forecastKey. You can use the script this way but it would be better to use an environment variable to store your API key.
+This is old, outdated and a possible security risk. The main script stage2.py references a file called forecastKey. You can use the script this way but it would be better to use an environment variable to store your API key.
