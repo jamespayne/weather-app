@@ -1,6 +1,10 @@
 # weatherapp
 Simple python based web server and client which calls the DarkSky Weather API. This was a university project.
 
+Update as of 07/05/20 DarkSky is discontinuing their API access. See [here](https://blog.darksky.net/).
+
+I'm sure you could use this with some other weather api though. It would just be a matter of changing the API requests when sourcing weather data.
+
 ## Aim
 
 * Further improve my python programming skills.
